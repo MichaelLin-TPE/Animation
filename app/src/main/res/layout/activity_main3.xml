@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+
+
+    <TextView
+        android:id="@+id/text_hello"
+        android:text="hell"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/like"
+        app:layout_constraintTop_toBottomOf="@id/text_hello"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/like"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_alpha"
+        android:text="alpha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_rotate"
+        android:text="rotate"
+        app:layout_constraintBottom_toBottomOf="@id/btn_alpha"
+        app:layout_constraintLeft_toRightOf="@id/btn_alpha"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_set"
+        android:text="set"
+        app:layout_constraintBottom_toBottomOf="@id/btn_rotate"
+        app:layout_constraintLeft_toRightOf="@id/btn_rotate"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_x"
+        android:text="x"
+        app:layout_constraintBottom_toTopOf="@id/btn_alpha"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_color"
+        android:text="color"
+        app:layout_constraintBottom_toBottomOf="@id/btn_x"
+        app:layout_constraintLeft_toRightOf="@id/btn_x"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_scale_x"
+        android:text="scale X"
+        app:layout_constraintBottom_toBottomOf="@id/btn_color"
+        app:layout_constraintLeft_toRightOf="@id/btn_color"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/text_test"
+        android:text="Hello,Michael"
+        app:layout_constraintTop_toBottomOf="@id/like"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_color"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_anim"
+        android:text="anim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
